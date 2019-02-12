@@ -9,3 +9,5 @@ EurKEY Keyboard Layouts - by Steffen Brüntjen. These projects also contain the 
 ### New :  version 1.3 beta 2 (unofficial) :  fixes an issue where the math symbols were broken (dead key : AltGr + Shift + M)
 
 **File :  EurKEY Keyboard 1.3 beta 2 (unofficial).zip**
+
+**Download :  https://github.com/pieter-degroote/EurKEY/raw/master/EurKEY%20Keyboard%201.3%20beta%202%20(unofficial).zip**
