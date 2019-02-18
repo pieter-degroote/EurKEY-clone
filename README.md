@@ -13,7 +13,7 @@ micro sign :  `µ` (`AltGr + Shift + M` then `q`)
 
 summation symbol :  `∑` (`AltGr + Shift + M` then `t`)
 
-final Greek sigma :  `ς` (`AltGr + M` then `,` (comma))
+final Greek sigma :  `ς` (`AltGr + m` then `,` (comma))
 
 Czech letters :  `ů` and `Ů` (`AltGr + 7` then `u` / `U`)
 
