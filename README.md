@@ -1,7 +1,9 @@
 # EurKEY Keyboard Layouts
 EurKEY Keyboard Layouts - by Steffen Brüntjen. These projects also contain the KLC files, which can be used to edit the keyboard layouts and to rebuild the installation files.
 
-### Latest version (unofficial) :  v1.3 beta 2 draft 2019-02-18 a :  fixes an issue where the math symbols were broken in the official v1.3 beta (dead key : AltGr + Shift + M) and also adds the following symbols :
+### Latest releases are moved to the 'UltimateKEYS' project :  https://github.com/pieter-degroote/UltimateKEYS
+
+The previous interim versions already fixed an issue where the math symbols were broken in the official v1.3 beta (dead key : AltGr + Shift + M) and also added the following symbols :
 
 dagger symbol :  `†` (`AltGr + ¬` then `d`)
 
