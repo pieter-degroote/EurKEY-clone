@@ -22,7 +22,7 @@ small letter eth and capital letter Eth :  `ð` and `Ð` (`AltGr + d` and `AltGr
 (D with stroke (`đ` and `Đ`) are under :  `AltGr + Shift + 7` then `d` / `D`)
 
 
-**Download :  https://github.com/pieter-degroote/EurKEY-Win/raw/master/EurKEY%20Keyboard%201.3%20beta%202%20draft%202019-02-18%20a%20(unofficial).zip**
+**Latest releases (UltimateKEYS) :  https://github.com/pieter-degroote/UltimateKEYS**
 
 
 
