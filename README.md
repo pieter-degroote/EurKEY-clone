@@ -28,4 +28,4 @@ small letter eth and capital letter Eth :  `ð` and `Ð` (`AltGr + d` and `AltGr
 
 
 
-**Official website** : https://eurkey.steffen.bruentjen.eu/
+**Official EurKEY website** : https://eurkey.steffen.bruentjen.eu/
