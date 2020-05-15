@@ -23,7 +23,7 @@ Czech letters :  `ů` and `Ů` (`AltGr + 7` then `u` / `U`)
 
 small letter eth and capital letter Eth :  `ð` and `Ð` (`AltGr + d` and `AltGr + Shift + D`)
 
-(D with stroke (`đ` and `Đ`) are under :  `AltGr + Shift + 7` then `d` / `D`)
+(D with stroke (`đ` and `Đ`) are on :  `AltGr + Shift + 7` then `d` / `D`)
 
 
 **Latest releases (UltimateKEYS) :  https://github.com/pieter-degroote/UltimateKEYS**
