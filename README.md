@@ -1,7 +1,7 @@
-# EurKEY Keyboard Layouts
-EurKEY Keyboard Layouts - by Steffen Brüntjen. These projects also contain the KLC files, which can be used to edit the keyboard layouts and to rebuild the installation files.
+# EurKEY Keyboard Layouts - Clone Project
+EurKEY Keyboard Layouts (clone) - by Steffen Brüntjen. These projects also contain the KLC files, extracted from the installation DLLs which can be used to edit the keyboard layouts and to rebuild the installation files.
 
-## Latest releases can be found in the 'UltimateKEYS' project :  https://github.com/pieter-degroote/UltimateKEYS
+## Latest releases - UltimateKEYS :  https://github.com/pieter-degroote/UltimateKEYS
 
 ## Website : &nbsp;https://pieter-degroote.github.io/UltimateKEYS/
 
