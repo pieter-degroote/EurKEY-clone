@@ -3,10 +3,10 @@ EurKEY Keyboard Layouts (clone) - by Steffen Brüntjen. These projects also cont
 
 ## Similar Projects
 
-**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
+**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS** &emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
 
-**UltimateKEYS - Website&nbsp;: &nbsp;https://pieter-degroote.github.io/UltimateKEYS/**
+**UltimateKEYS - Website&nbsp;: &nbsp;https://pieter-degroote.github.io/UltimateKEYS/** &nbsp;(**https://pieter-degroote.github.io/**)
 
-**Testing repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
+**Testing repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing** &emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
 
 ## Official EurKEY website&nbsp;: &nbsp;https://eurkey.steffen.bruentjen.eu/
