@@ -12,4 +12,10 @@
 
 ![EurKEY 1.1 - Keyboard Layout Image](EurKEY%201.1%20-%20Keyboard%20Layout%20Image.png)
 
-The files with "Source URL - EurKEY 1.\[x\].txt" contain the respective links to keyboard-layout-editor.com, generating their corresponding images.
+## EurKEY (US) - Linux XKB - Keyboard Layout Image
+
+![EurKEY (US) - Linux XKB - Keyboard Layout Image](EurKEY%20(US)%20-%20Linux%20XKB%20-%20Keyboard%20Layout%20Image.png)
+
+=&gt; CP key&nbsp;: &nbsp;Compose Key (Multi_key)
+
+The files with "Source URL - EurKEY \[...\].txt" contain the respective links to keyboard-layout-editor.com, generating their corresponding images.
