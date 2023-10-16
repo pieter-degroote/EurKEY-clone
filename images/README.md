@@ -12,4 +12,4 @@
 
 ![EurKEY 1.1 - Keyboard Layout Image](EurKEY%201.1%20-%20Keyboard%20Layout%20Image.png)
 
-The files "Source URL - EurKey 1.\[x\].txt" contain the respective links to keyboard-layout-editor.com, generating their corresponding images.
+The files with "Source URL - EurKEY 1.\[x\].txt" contain the respective links to keyboard-layout-editor.com, generating their corresponding images.
