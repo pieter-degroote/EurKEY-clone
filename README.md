@@ -24,4 +24,4 @@ See the folder **`images`**.
 
 **UltimateKEYS - Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
 
-**Similar Keyboard Layouts&nbsp;: &nbsp;https://pieter-degroote.github.io/list-keyboard-layouts.html**
+**Similar Projects&nbsp;: &nbsp;https://pieter-degroote.github.io/list-keyboard-layouts.html**
