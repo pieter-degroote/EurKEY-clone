@@ -7,16 +7,16 @@ This repo also contains the MSKLC files, extracted from the installation DLLs, w
 Unofficial AutoHotkey scripts for EurKEY v1.1 to v1.3 beta.  
 See the folder **`autohotkey`** for further details.
 
-## EurKEY - Keyboard Layout Images
-
-The keyboard layout images for EurKEY v1.1 to v1.3 beta, created using keyboard-layout-editor.com.  
-See the folder **`images`**.
-
 ## EurKEY - MSKLC Files
 
 The MSKLC files, extracted from the installation DLLs from EurKEY v1.1 to v1.3 beta.  
 Note that there is also a corrected EurKEY v1.3 beta, having the math symbols back again.  
 See the folder **`msklc`**.
+
+## EurKEY - Keyboard Layout Images
+
+The keyboard layout images for EurKEY v1.1 to v1.3 beta, created using keyboard-layout-editor.com.  
+See the folder **`images`**.
 
 ## Documentation and Similar Projects
 
