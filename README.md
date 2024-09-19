@@ -24,6 +24,4 @@ See the folder **`images`**.
 
 **UltimateKEYS - Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
 
-**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS** &emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
-
-**Testing repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing** &emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
+**Similar Keyboard Layouts&nbsp;: &nbsp;https://pieter-degroote.github.io/list-keyboard-layouts.html**
