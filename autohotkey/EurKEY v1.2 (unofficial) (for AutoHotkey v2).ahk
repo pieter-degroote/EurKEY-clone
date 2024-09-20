@@ -1,10 +1,10 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.2 (unofficial) (for AutoHotkey v2).ahk - 2024-09-18
+; EurKEY v1.2 (unofficial) (for AutoHotkey v2).ahk - 2024-09-20
 
-; GitHub :    https://github.com/pieter-degroote/EurKEY-clone
+; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
-; License :   GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
 
 ; Configuration :
@@ -321,11 +321,15 @@ dkTilde[" "] := "~"         ; tilde
 
 global dkSymbols := Map()
 dkSymbols["c"] := "{u+00a9}"  ; (©) copyright sign
+dkSymbols["C"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols["p"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols["P"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols["r"] := "{u+00ae}"  ; (®) registered sign
+dkSymbols["R"] := "{u+00ae}"  ; (®) registered sign
 dkSymbols["s"] := "{u+2120}"  ; (℠) service mark
+dkSymbols["S"] := "{u+2120}"  ; (℠) service mark
 dkSymbols["t"] := "{u+2122}"  ; (™) trademark symbol
+dkSymbols["T"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols["1"] := "{u+00bc}"  ; (¼) vulgar fraction 1/4
 dkSymbols["2"] := "{u+00bd}"  ; (½) vulgar fraction 1/2
 dkSymbols["3"] := "{u+00be}"  ; (¾) vulgar fraction 3/4

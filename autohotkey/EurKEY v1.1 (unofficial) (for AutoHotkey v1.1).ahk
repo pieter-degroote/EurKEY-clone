@@ -1,10 +1,10 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2024-09-18
+; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2024-09-20
 
-; GitHub :    https://github.com/pieter-degroote/EurKEY-clone
+; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
-; License :   GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
 
 ; Configuration :
@@ -320,11 +320,15 @@ dkTilde.item[" "] := "~"         ; tilde
 
 dkSymbols := ComObjCreate("Scripting.Dictionary")
 dkSymbols.item["c"] := "{u+00a9}"  ; (©) copyright sign
+dkSymbols.item["C"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols.item["p"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols.item["P"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols.item["r"] := "{u+00ae}"  ; (®) registered sign
+dkSymbols.item["R"] := "{u+00ae}"  ; (®) registered sign
 dkSymbols.item["s"] := "{u+2120}"  ; (℠) service mark
+dkSymbols.item["S"] := "{u+2120}"  ; (℠) service mark
 dkSymbols.item["t"] := "{u+2122}"  ; (™) trademark symbol
+dkSymbols.item["T"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["1"] := "{u+00bc}"  ; (¼) vulgar fraction 1/4
 dkSymbols.item["2"] := "{u+00bd}"  ; (½) vulgar fraction 1/2
 dkSymbols.item["3"] := "{u+00be}"  ; (¾) vulgar fraction 3/4

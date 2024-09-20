@@ -1,10 +1,10 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.3 beta (unofficial) (for AutoHotkey v1.1).ahk - 2024-09-18
+; EurKEY v1.3 beta (unofficial) (for AutoHotkey v1.1).ahk - 2024-09-20
 
-; GitHub :    https://github.com/pieter-degroote/EurKEY-clone
+; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
-; License :   GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
 
 ; Configuration :
@@ -320,10 +320,13 @@ dkTilde.item[" "] := "~"         ; tilde
 
 dkSymbols := ComObjCreate("Scripting.Dictionary")
 dkSymbols.item["c"] := "{u+00a9}"  ; (©) copyright sign
+dkSymbols.item["C"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols.item["p"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols.item["P"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols.item["r"] := "{u+00ae}"  ; (®) registered sign
+dkSymbols.item["R"] := "{u+00ae}"  ; (®) registered sign
 dkSymbols.item["s"] := "{u+00a7}"  ; (§) section sign
+dkSymbols.item["S"] := "{u+00a7}"  ; (§) section sign
 dkSymbols.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["T"] := "{u+2120}"  ; (℠) service mark
 dkSymbols.item["1"] := "{u+2116}"  ; (№) numero sign

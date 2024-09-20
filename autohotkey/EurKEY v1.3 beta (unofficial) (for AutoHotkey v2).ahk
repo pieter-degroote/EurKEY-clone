@@ -1,10 +1,10 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.3 beta (unofficial) (for AutoHotkey v2).ahk - 2024-09-18
+; EurKEY v1.3 beta (unofficial) (for AutoHotkey v2).ahk - 2024-09-20
 
-; GitHub :    https://github.com/pieter-degroote/EurKEY-clone
+; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
-; License :   GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
 
 ; Configuration :
@@ -321,10 +321,13 @@ dkTilde[" "] := "~"         ; tilde
 
 global dkSymbols := Map()
 dkSymbols["c"] := "{u+00a9}"  ; (©) copyright sign
+dkSymbols["C"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols["p"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols["P"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols["r"] := "{u+00ae}"  ; (®) registered sign
+dkSymbols["R"] := "{u+00ae}"  ; (®) registered sign
 dkSymbols["s"] := "{u+00a7}"  ; (§) section sign
+dkSymbols["S"] := "{u+00a7}"  ; (§) section sign
 dkSymbols["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols["T"] := "{u+2120}"  ; (℠) service mark
 dkSymbols["1"] := "{u+2116}"  ; (№) numero sign
