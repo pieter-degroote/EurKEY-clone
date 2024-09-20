@@ -4,7 +4,7 @@ This repo also contains the MSKLC files, extracted from the installation DLLs, w
 
 ## EurKEY for AutoHotkey v2/v1.1
 
-Unofficial AutoHotkey scripts for EurKEY v1.1 to v1.3 beta.  
+Unofficial AutoHotkey scripts for EurKEY v1.1 to v1.3.  
 See the folder **`autohotkey`** for further details.
 
 ## EurKEY - MSKLC Files
@@ -15,7 +15,7 @@ See the folder **`msklc`**.
 
 ## EurKEY - Keyboard Layout Images
 
-The keyboard layout images for EurKEY v1.1 to v1.3 beta, created using keyboard-layout-editor.com.  
+The keyboard layout images for EurKEY v1.1 to v1.3, created using keyboard-layout-editor.com.  
 See the folder **`images`**.
 
 ## Documentation and Similar Projects
