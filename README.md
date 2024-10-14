@@ -1,6 +1,8 @@
 # EurKEY Keyboard Layouts - Clone Project
+
 EurKEY Keyboard Layouts (clone) - by Steffen Brüntjen.  
-This repo also contains the MSKLC files, extracted from the installation DLLs, which can be used to edit the keyboard layouts and to rebuild the installation files.
+This repo also contains the MSKLC files, extracted from the installation DLLs, which can be used to edit the keyboard layouts and to rebuild the installation files.  
+In addition, this repo also contains (unofficial) scripts for AutoHotkey v2/v1.1.
 
 ## EurKEY for AutoHotkey v2/v1.1
 
