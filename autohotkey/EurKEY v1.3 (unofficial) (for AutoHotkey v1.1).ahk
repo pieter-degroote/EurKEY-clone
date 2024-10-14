@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v1.1).ahk - 2024-09-20
+; EurKEY v1.3 (unofficial) (for AutoHotkey v1.1).ahk - 2024-10-14
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -303,6 +303,8 @@ dkTilde.item["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
 dkTilde.item["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
 dkTilde.item["i"] := "{u+0129}"  ; (ĩ) i with tilde
 dkTilde.item["I"] := "{u+0128}"  ; (Ĩ) I with tilde
+dkTilde.item["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
+dkTilde.item["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
 dkTilde.item["n"] := "{u+00f1}"  ; (ñ) n with tilde
 dkTilde.item["N"] := "{u+00d1}"  ; (Ñ) N with tilde
 dkTilde.item["o"] := "{u+00f5}"  ; (õ) o with tilde
@@ -313,7 +315,7 @@ dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde.item[" "] := "~"         ; tilde
+dkTilde.item[" "] := "~"         ;     tilde
 
 
 ; Dead Key :  Symbols
@@ -329,6 +331,15 @@ dkSymbols.item["s"] := "{u+00a7}"  ; (§) section sign
 dkSymbols.item["S"] := "{u+00a7}"  ; (§) section sign
 dkSymbols.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["T"] := "{u+2120}"  ; (℠) service mark
+dkSymbols.item["b"] := "{u+2022}"  ; (•) bullet
+dkSymbols.item["B"] := "{u+2022}"  ; (•) bullet
+dkSymbols.item["."] := "{u+2022}"  ; (•) bullet
+dkSymbols.item["d"] := "{u+2020}"  ; (†) dagger
+dkSymbols.item["D"] := "{u+2021}"  ; (‡) double dagger
+dkSymbols.item["q"] := "{u+00b6}"  ; (¶) pilcrow sign
+dkSymbols.item["Q"] := "{u+00b6}"  ; (¶) pilcrow sign
+dkSymbols.item["x"] := "{u+00a4}"  ; (¤) currency sign
+dkSymbols.item["X"] := "{u+00a4}"  ; (¤) currency sign
 dkSymbols.item["1"] := "{u+2116}"  ; (№) numero sign
 dkSymbols.item["2"] := "{u+00bd}"  ; (½) vulgar fraction 1/2
 dkSymbols.item["3"] := "{u+2153}"  ; (⅓) vulgar fraction 1/3
@@ -377,12 +388,12 @@ dkGreekAlphabet.item["e"] := "{u+03b5}"  ; (ε) small epsilon
 dkGreekAlphabet.item["E"] := "{u+0395}"  ; (Ε) capital epsilon
 dkGreekAlphabet.item["z"] := "{u+03b6}"  ; (ζ) small zeta
 dkGreekAlphabet.item["Z"] := "{u+0396}"  ; (Ζ) capital zeta
-dkGreekAlphabet.item["i"] := "{u+03b7}"  ; (η) small eta
-dkGreekAlphabet.item["I"] := "{u+0397}"  ; (Η) capital eta
-dkGreekAlphabet.item["h"] := "{u+03b8}"  ; (θ) small theta
-dkGreekAlphabet.item["H"] := "{u+0398}"  ; (Θ) capital theta
-dkGreekAlphabet.item["j"] := "{u+03b9}"  ; (ι) small iota
-dkGreekAlphabet.item["J"] := "{u+0399}"  ; (Ι) capital iota
+dkGreekAlphabet.item["h"] := "{u+03b7}"  ; (η) small eta
+dkGreekAlphabet.item["H"] := "{u+0397}"  ; (Η) capital eta
+dkGreekAlphabet.item["j"] := "{u+03b8}"  ; (θ) small theta
+dkGreekAlphabet.item["J"] := "{u+0398}"  ; (Θ) capital theta
+dkGreekAlphabet.item["i"] := "{u+03b9}"  ; (ι) small iota
+dkGreekAlphabet.item["I"] := "{u+0399}"  ; (Ι) capital iota
 dkGreekAlphabet.item["k"] := "{u+03ba}"  ; (κ) small kappa
 dkGreekAlphabet.item["K"] := "{u+039a}"  ; (Κ) capital kappa
 dkGreekAlphabet.item["l"] := "{u+03bb}"  ; (λ) small lambda
@@ -405,6 +416,8 @@ dkGreekAlphabet.item[","] := "{u+03c2}"  ; (ς) small final sigma
 dkGreekAlphabet.item[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet.item["t"] := "{u+03c4}"  ; (τ) small tau
 dkGreekAlphabet.item["T"] := "{u+03a4}"  ; (Τ) capital tau
+dkGreekAlphabet.item["u"] := "{u+03c5}"  ; (υ) small upsilon
+dkGreekAlphabet.item["U"] := "{u+03a5}"  ; (Υ) capital upsilon
 dkGreekAlphabet.item["y"] := "{u+03c5}"  ; (υ) small upsilon
 dkGreekAlphabet.item["Y"] := "{u+03a5}"  ; (Υ) capital upsilon
 dkGreekAlphabet.item["f"] := "{u+03c6}"  ; (φ) small phi
@@ -415,8 +428,6 @@ dkGreekAlphabet.item["w"] := "{u+03c8}"  ; (ψ) small psi
 dkGreekAlphabet.item["W"] := "{u+03a8}"  ; (Ψ) capital psi
 dkGreekAlphabet.item["q"] := "{u+03c9}"  ; (ω) small omega
 dkGreekAlphabet.item["Q"] := "{u+03a9}"  ; (Ω) capital omega
-dkGreekAlphabet.item["u"] := "{u+03c9}"  ; (ω) small omega
-dkGreekAlphabet.item["U"] := "{u+03a9}"  ; (Ω) capital omega
 dkGreekAlphabet.item["1"] := "{u+00b9}"  ; (¹) superscript 1
 dkGreekAlphabet.item["2"] := "{u+00b2}"  ; (²) superscript 2
 dkGreekAlphabet.item["3"] := "{u+00b3}"  ; (³) superscript 3

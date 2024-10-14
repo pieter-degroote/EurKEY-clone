@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2024-09-20
+; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2024-10-14
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -304,6 +304,8 @@ dkTilde["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
 dkTilde["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
 dkTilde["i"] := "{u+0129}"  ; (ĩ) i with tilde
 dkTilde["I"] := "{u+0128}"  ; (Ĩ) I with tilde
+dkTilde["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
+dkTilde["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
 dkTilde["n"] := "{u+00f1}"  ; (ñ) n with tilde
 dkTilde["N"] := "{u+00d1}"  ; (Ñ) N with tilde
 dkTilde["o"] := "{u+00f5}"  ; (õ) o with tilde
@@ -314,7 +316,7 @@ dkTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde[" "] := "~"         ; tilde
+dkTilde[" "] := "~"         ;     tilde
 
 
 ; Dead Key :  Symbols
@@ -330,6 +332,15 @@ dkSymbols["s"] := "{u+00a7}"  ; (§) section sign
 dkSymbols["S"] := "{u+00a7}"  ; (§) section sign
 dkSymbols["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols["T"] := "{u+2120}"  ; (℠) service mark
+dkSymbols["b"] := "{u+2022}"  ; (•) bullet
+dkSymbols["B"] := "{u+2022}"  ; (•) bullet
+dkSymbols["."] := "{u+2022}"  ; (•) bullet
+dkSymbols["d"] := "{u+2020}"  ; (†) dagger
+dkSymbols["D"] := "{u+2021}"  ; (‡) double dagger
+dkSymbols["q"] := "{u+00b6}"  ; (¶) pilcrow sign
+dkSymbols["Q"] := "{u+00b6}"  ; (¶) pilcrow sign
+dkSymbols["x"] := "{u+00a4}"  ; (¤) currency sign
+dkSymbols["X"] := "{u+00a4}"  ; (¤) currency sign
 dkSymbols["1"] := "{u+2116}"  ; (№) numero sign
 dkSymbols["2"] := "{u+00bd}"  ; (½) vulgar fraction 1/2
 dkSymbols["3"] := "{u+2153}"  ; (⅓) vulgar fraction 1/3
@@ -378,12 +389,12 @@ dkGreekAlphabet["e"] := "{u+03b5}"  ; (ε) small epsilon
 dkGreekAlphabet["E"] := "{u+0395}"  ; (Ε) capital epsilon
 dkGreekAlphabet["z"] := "{u+03b6}"  ; (ζ) small zeta
 dkGreekAlphabet["Z"] := "{u+0396}"  ; (Ζ) capital zeta
-dkGreekAlphabet["i"] := "{u+03b7}"  ; (η) small eta
-dkGreekAlphabet["I"] := "{u+0397}"  ; (Η) capital eta
-dkGreekAlphabet["h"] := "{u+03b8}"  ; (θ) small theta
-dkGreekAlphabet["H"] := "{u+0398}"  ; (Θ) capital theta
-dkGreekAlphabet["j"] := "{u+03b9}"  ; (ι) small iota
-dkGreekAlphabet["J"] := "{u+0399}"  ; (Ι) capital iota
+dkGreekAlphabet["h"] := "{u+03b7}"  ; (η) small eta
+dkGreekAlphabet["H"] := "{u+0397}"  ; (Η) capital eta
+dkGreekAlphabet["j"] := "{u+03b8}"  ; (θ) small theta
+dkGreekAlphabet["J"] := "{u+0398}"  ; (Θ) capital theta
+dkGreekAlphabet["i"] := "{u+03b9}"  ; (ι) small iota
+dkGreekAlphabet["I"] := "{u+0399}"  ; (Ι) capital iota
 dkGreekAlphabet["k"] := "{u+03ba}"  ; (κ) small kappa
 dkGreekAlphabet["K"] := "{u+039a}"  ; (Κ) capital kappa
 dkGreekAlphabet["l"] := "{u+03bb}"  ; (λ) small lambda
@@ -406,6 +417,8 @@ dkGreekAlphabet[","] := "{u+03c2}"  ; (ς) small final sigma
 dkGreekAlphabet[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet["t"] := "{u+03c4}"  ; (τ) small tau
 dkGreekAlphabet["T"] := "{u+03a4}"  ; (Τ) capital tau
+dkGreekAlphabet["u"] := "{u+03c5}"  ; (υ) small upsilon
+dkGreekAlphabet["U"] := "{u+03a5}"  ; (Υ) capital upsilon
 dkGreekAlphabet["y"] := "{u+03c5}"  ; (υ) small upsilon
 dkGreekAlphabet["Y"] := "{u+03a5}"  ; (Υ) capital upsilon
 dkGreekAlphabet["f"] := "{u+03c6}"  ; (φ) small phi
@@ -416,8 +429,6 @@ dkGreekAlphabet["w"] := "{u+03c8}"  ; (ψ) small psi
 dkGreekAlphabet["W"] := "{u+03a8}"  ; (Ψ) capital psi
 dkGreekAlphabet["q"] := "{u+03c9}"  ; (ω) small omega
 dkGreekAlphabet["Q"] := "{u+03a9}"  ; (Ω) capital omega
-dkGreekAlphabet["u"] := "{u+03c9}"  ; (ω) small omega
-dkGreekAlphabet["U"] := "{u+03a9}"  ; (Ω) capital omega
 dkGreekAlphabet["1"] := "{u+00b9}"  ; (¹) superscript 1
 dkGreekAlphabet["2"] := "{u+00b2}"  ; (²) superscript 2
 dkGreekAlphabet["3"] := "{u+00b3}"  ; (³) superscript 3
