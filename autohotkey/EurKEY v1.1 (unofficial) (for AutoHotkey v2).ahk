@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2024-11-30
+; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2024-12-28
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -50,7 +50,7 @@ dkCircumflex["y"] := "{u+0177}"  ; (ŷ) y with circumflex
 dkCircumflex["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 dkCircumflex["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 dkCircumflex["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
-dkCircumflex[" "] := "{^}"       ;     circumflex accent
+dkCircumflex[" "] := "{u+005e}"  ; (^) circumflex accent
 
 
 ; Dead Key :  Caron
@@ -162,14 +162,14 @@ dkMacron["d"] := "{u+0111}"  ; (đ) d with stroke
 dkMacron["D"] := "{u+0110}"  ; (Đ) D with stroke
 dkMacron["e"] := "{u+0113}"  ; (ē) e with macron
 dkMacron["E"] := "{u+0112}"  ; (Ē) E with macron
-dkMacron["g"] := "{u+1e21}"  ; (ḡ) g with macron
-dkMacron["G"] := "{u+1e20}"  ; (Ḡ) G with macron
+dkMacron["g"] := "{u+01e5}"  ; (ǥ) g with stroke (Skolt Sami)
+dkMacron["G"] := "{u+01e4}"  ; (Ǥ) G with stroke (Skolt Sami)
 dkMacron["h"] := "{u+0127}"  ; (ħ) h with stroke (Maltese)
 dkMacron["H"] := "{u+0126}"  ; (Ħ) H with stroke (Maltese)
 dkMacron["i"] := "{u+012b}"  ; (ī) i with macron
 dkMacron["I"] := "{u+012a}"  ; (Ī) I with macron
-dkMacron["l"] := "{u+1e3b}"  ; (ḻ) l with line below
-dkMacron["L"] := "{u+1e3a}"  ; (Ḻ) L with line below
+dkMacron["l"] := "{u+0142}"  ; (ł) l with stroke
+dkMacron["L"] := "{u+0141}"  ; (Ł) L with stroke
 dkMacron["o"] := "{u+014d}"  ; (ō) o with macron
 dkMacron["O"] := "{u+014c}"  ; (Ō) O with macron
 dkMacron["t"] := "{u+0167}"  ; (ŧ) t with stroke
@@ -207,8 +207,8 @@ dkAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
 dkAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
 dkAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
 dkAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
-dkAcuteAccent["l"] := "{u+0142}"  ; (ł) l with stroke
-dkAcuteAccent["L"] := "{u+0141}"  ; (Ł) L with stroke
+dkAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
+dkAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
 dkAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
 dkAcuteAccent["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
 dkAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
@@ -292,7 +292,7 @@ dkGraveAccent[chr(0x00f6)] := "{u+01eb}"  ; (ö -> ǫ) o with ogonek
 dkGraveAccent[chr(0x00d6)] := "{u+01ea}"  ; (Ö -> Ǫ) O with ogonek
 dkGraveAccent[chr(0x00fc)] := "{u+0173}"  ; (ü -> ų) u with ogonek
 dkGraveAccent[chr(0x00dc)] := "{u+0172}"  ; (Ü -> Ų) U with ogonek
-dkGraveAccent[" "] := "``"  ; grave accent
+dkGraveAccent[" "] := "{u+0060}"  ; (`) grave accent
 
 
 ; Dead Key :  Tilde
@@ -316,7 +316,7 @@ dkTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde[" "] := "~"         ;     tilde
+dkTilde[" "] := "{u+007e}"  ; (~) tilde
 
 
 ; Dead Key :  Symbols
