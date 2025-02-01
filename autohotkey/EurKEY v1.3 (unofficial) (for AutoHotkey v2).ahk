@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2024-12-28
+; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2025-01-29
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -17,8 +17,6 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
-
-global dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
 
 
 ; Dead Key :  Circumflex Accent
@@ -188,54 +186,54 @@ dkMacron[" "] := "{u+00af}"  ; (¯) macron
 
 ; Dead Key :  Acute Accent
 
-global dkAcuteAccent := Map()
-dkAcuteAccent["a"] := "{u+00e1}"  ; (á) a with acute
-dkAcuteAccent["A"] := "{u+00c1}"  ; (Á) A with acute
-dkAcuteAccent["b"] := "{u+0253}"  ; (ɓ) b with hook
-dkAcuteAccent["B"] := "{u+0181}"  ; (Ɓ) B with hook
-dkAcuteAccent["c"] := "{u+0107}"  ; (ć) c with acute
-dkAcuteAccent["C"] := "{u+0106}"  ; (Ć) C with acute
-dkAcuteAccent["d"] := "{u+0257}"  ; (ɗ) d with hook
-dkAcuteAccent["D"] := "{u+018a}"  ; (Ɗ) D with hook
-dkAcuteAccent["e"] := "{u+00e9}"  ; (é) e with acute
-dkAcuteAccent["E"] := "{u+00c9}"  ; (É) E with acute
-dkAcuteAccent["f"] := "{u+0192}"  ; (ƒ) f with hook
-dkAcuteAccent["F"] := "{u+0191}"  ; (Ƒ) F with hook
-dkAcuteAccent["g"] := "{u+01f5}"  ; (ǵ) g with acute
-dkAcuteAccent["G"] := "{u+01f4}"  ; (Ǵ) G with acute
-dkAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
-dkAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
-dkAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
-dkAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
-dkAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
-dkAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
-dkAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
-dkAcuteAccent["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
-dkAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
-dkAcuteAccent["N"] := "{u+0143}"  ; (Ń) N with acute
-dkAcuteAccent["o"] := "{u+00f3}"  ; (ó) o with acute
-dkAcuteAccent["O"] := "{u+00d3}"  ; (Ó) O with acute
-dkAcuteAccent["p"] := "{u+1e55}"  ; (ṕ) p with acute
-dkAcuteAccent["P"] := "{u+1e54}"  ; (Ṕ) P with acute
-dkAcuteAccent["r"] := "{u+0155}"  ; (ŕ) r with acute
-dkAcuteAccent["R"] := "{u+0154}"  ; (Ŕ) R with acute
-dkAcuteAccent["s"] := "{u+015b}"  ; (ś) s with acute
-dkAcuteAccent["S"] := "{u+015a}"  ; (Ś) S with acute
-dkAcuteAccent["u"] := "{u+00fa}"  ; (ú) u with acute
-dkAcuteAccent["U"] := "{u+00da}"  ; (Ú) U with acute
-dkAcuteAccent["w"] := "{u+1e83}"  ; (ẃ) w with acute
-dkAcuteAccent["W"] := "{u+1e82}"  ; (Ẃ) W with acute
-dkAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
-dkAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
-dkAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
-dkAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
-dkAcuteAccent[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
-dkAcuteAccent[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
-dkAcuteAccent[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
-dkAcuteAccent[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
-dkAcuteAccent[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
-dkAcuteAccent[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
-dkAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
+global dkAcute := Map()
+dkAcute["a"] := "{u+00e1}"  ; (á) a with acute
+dkAcute["A"] := "{u+00c1}"  ; (Á) A with acute
+dkAcute["b"] := "{u+0253}"  ; (ɓ) b with hook
+dkAcute["B"] := "{u+0181}"  ; (Ɓ) B with hook
+dkAcute["c"] := "{u+0107}"  ; (ć) c with acute
+dkAcute["C"] := "{u+0106}"  ; (Ć) C with acute
+dkAcute["d"] := "{u+0257}"  ; (ɗ) d with hook
+dkAcute["D"] := "{u+018a}"  ; (Ɗ) D with hook
+dkAcute["e"] := "{u+00e9}"  ; (é) e with acute
+dkAcute["E"] := "{u+00c9}"  ; (É) E with acute
+dkAcute["f"] := "{u+0192}"  ; (ƒ) f with hook
+dkAcute["F"] := "{u+0191}"  ; (Ƒ) F with hook
+dkAcute["g"] := "{u+01f5}"  ; (ǵ) g with acute
+dkAcute["G"] := "{u+01f4}"  ; (Ǵ) G with acute
+dkAcute["i"] := "{u+00ed}"  ; (í) i with acute
+dkAcute["I"] := "{u+00cd}"  ; (Í) I with acute
+dkAcute["k"] := "{u+1e31}"  ; (ḱ) k with acute
+dkAcute["K"] := "{u+1e30}"  ; (Ḱ) K with acute
+dkAcute["l"] := "{u+013a}"  ; (ĺ) l with acute
+dkAcute["L"] := "{u+0139}"  ; (Ĺ) L with acute
+dkAcute["m"] := "{u+1e3f}"  ; (ḿ) m with acute
+dkAcute["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
+dkAcute["n"] := "{u+0144}"  ; (ń) n with acute
+dkAcute["N"] := "{u+0143}"  ; (Ń) N with acute
+dkAcute["o"] := "{u+00f3}"  ; (ó) o with acute
+dkAcute["O"] := "{u+00d3}"  ; (Ó) O with acute
+dkAcute["p"] := "{u+1e55}"  ; (ṕ) p with acute
+dkAcute["P"] := "{u+1e54}"  ; (Ṕ) P with acute
+dkAcute["r"] := "{u+0155}"  ; (ŕ) r with acute
+dkAcute["R"] := "{u+0154}"  ; (Ŕ) R with acute
+dkAcute["s"] := "{u+015b}"  ; (ś) s with acute
+dkAcute["S"] := "{u+015a}"  ; (Ś) S with acute
+dkAcute["u"] := "{u+00fa}"  ; (ú) u with acute
+dkAcute["U"] := "{u+00da}"  ; (Ú) U with acute
+dkAcute["w"] := "{u+1e83}"  ; (ẃ) w with acute
+dkAcute["W"] := "{u+1e82}"  ; (Ẃ) W with acute
+dkAcute["y"] := "{u+00fd}"  ; (ý) y with acute
+dkAcute["Y"] := "{u+00dd}"  ; (Ý) Y with acute
+dkAcute["z"] := "{u+017a}"  ; (ź) z with acute
+dkAcute["Z"] := "{u+0179}"  ; (Ź) Z with acute
+dkAcute[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
+dkAcute[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
+dkAcute[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
+dkAcute[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
+dkAcute[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
+dkAcute[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
+dkAcute[" "] := "{u+00b4}"  ; (´) acute accent
 
 
 ; Dead Key :  Diaeresis
@@ -265,34 +263,34 @@ dkDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 ; Dead Key :  Grave Accent
 
-global dkGraveAccent := Map()
-dkGraveAccent["a"] := "{u+00e0}"  ; (à) a with grave
-dkGraveAccent["A"] := "{u+00c0}"  ; (À) A with grave
-dkGraveAccent["e"] := "{u+00e8}"  ; (è) e with grave
-dkGraveAccent["E"] := "{u+00c8}"  ; (È) E with grave
-dkGraveAccent["i"] := "{u+00ec}"  ; (ì) i with grave
-dkGraveAccent["I"] := "{u+00cc}"  ; (Ì) I with grave
-dkGraveAccent["n"] := "{u+01f9}"  ; (ǹ) n with grave
-dkGraveAccent["N"] := "{u+01f8}"  ; (Ǹ) N with grave
-dkGraveAccent["o"] := "{u+00f2}"  ; (ò) o with grave
-dkGraveAccent["O"] := "{u+00d2}"  ; (Ò) O with grave
-dkGraveAccent["u"] := "{u+00f9}"  ; (ù) u with grave
-dkGraveAccent["U"] := "{u+00d9}"  ; (Ù) U with grave
-dkGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
-dkGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
-dkGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
-dkGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-dkGraveAccent[chr(0x00e4)] := "{u+0105}"  ; (ä -> ą) a with ogonek
-dkGraveAccent[chr(0x00c4)] := "{u+0104}"  ; (Ä -> Ą) A with ogonek
-dkGraveAccent[chr(0x00eb)] := "{u+0119}"  ; (ë -> ę) e with ogonek
-dkGraveAccent[chr(0x00cb)] := "{u+0118}"  ; (Ë -> Ę) E with ogonek
-dkGraveAccent[chr(0x00ef)] := "{u+012f}"  ; (ï -> į) i with ogonek
-dkGraveAccent[chr(0x00cf)] := "{u+012e}"  ; (Ï -> Į) I with ogonek
-dkGraveAccent[chr(0x00f6)] := "{u+01eb}"  ; (ö -> ǫ) o with ogonek
-dkGraveAccent[chr(0x00d6)] := "{u+01ea}"  ; (Ö -> Ǫ) O with ogonek
-dkGraveAccent[chr(0x00fc)] := "{u+0173}"  ; (ü -> ų) u with ogonek
-dkGraveAccent[chr(0x00dc)] := "{u+0172}"  ; (Ü -> Ų) U with ogonek
-dkGraveAccent[" "] := "{u+0060}"  ; (`) grave accent
+global dkGrave := Map()
+dkGrave["a"] := "{u+00e0}"  ; (à) a with grave
+dkGrave["A"] := "{u+00c0}"  ; (À) A with grave
+dkGrave["e"] := "{u+00e8}"  ; (è) e with grave
+dkGrave["E"] := "{u+00c8}"  ; (È) E with grave
+dkGrave["i"] := "{u+00ec}"  ; (ì) i with grave
+dkGrave["I"] := "{u+00cc}"  ; (Ì) I with grave
+dkGrave["n"] := "{u+01f9}"  ; (ǹ) n with grave
+dkGrave["N"] := "{u+01f8}"  ; (Ǹ) N with grave
+dkGrave["o"] := "{u+00f2}"  ; (ò) o with grave
+dkGrave["O"] := "{u+00d2}"  ; (Ò) O with grave
+dkGrave["u"] := "{u+00f9}"  ; (ù) u with grave
+dkGrave["U"] := "{u+00d9}"  ; (Ù) U with grave
+dkGrave["w"] := "{u+1e81}"  ; (ẁ) w with grave
+dkGrave["W"] := "{u+1e80}"  ; (Ẁ) W with grave
+dkGrave["y"] := "{u+1ef3}"  ; (ỳ) y with grave
+dkGrave["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
+dkGrave[chr(0x00e4)] := "{u+0105}"  ; (ä -> ą) a with ogonek
+dkGrave[chr(0x00c4)] := "{u+0104}"  ; (Ä -> Ą) A with ogonek
+dkGrave[chr(0x00eb)] := "{u+0119}"  ; (ë -> ę) e with ogonek
+dkGrave[chr(0x00cb)] := "{u+0118}"  ; (Ë -> Ę) E with ogonek
+dkGrave[chr(0x00ef)] := "{u+012f}"  ; (ï -> į) i with ogonek
+dkGrave[chr(0x00cf)] := "{u+012e}"  ; (Ï -> Į) I with ogonek
+dkGrave[chr(0x00f6)] := "{u+01eb}"  ; (ö -> ǫ) o with ogonek
+dkGrave[chr(0x00d6)] := "{u+01ea}"  ; (Ö -> Ǫ) O with ogonek
+dkGrave[chr(0x00fc)] := "{u+0173}"  ; (ü -> ų) u with ogonek
+dkGrave[chr(0x00dc)] := "{u+0172}"  ; (Ü -> Ų) U with ogonek
+dkGrave[" "] := "{u+0060}"  ; (`) grave accent
 
 
 ; Dead Key :  Tilde
@@ -374,92 +372,92 @@ dkSymbols[" "] := "{u+00ac}"  ; (¬) not sign
 
 ; Dead Key :  Greek Alphabet
 
-global dkGreekAlphabet := Map()
-dkGreekAlphabet["a"] := "{u+03b1}"  ; (α) small alpha
-dkGreekAlphabet["A"] := "{u+0391}"  ; (Α) capital alpha
-dkGreekAlphabet["b"] := "{u+03b2}"  ; (β) small beta
-dkGreekAlphabet["B"] := "{u+0392}"  ; (Β) capital beta
-dkGreekAlphabet["v"] := "{u+03b2}"  ; (β) small beta
-dkGreekAlphabet["V"] := "{u+0392}"  ; (Β) capital beta
-dkGreekAlphabet["g"] := "{u+03b3}"  ; (γ) small gamma
-dkGreekAlphabet["G"] := "{u+0393}"  ; (Γ) capital gamma
-dkGreekAlphabet["d"] := "{u+03b4}"  ; (δ) small delta
-dkGreekAlphabet["D"] := "{u+0394}"  ; (Δ) capital delta
-dkGreekAlphabet["e"] := "{u+03b5}"  ; (ε) small epsilon
-dkGreekAlphabet["E"] := "{u+0395}"  ; (Ε) capital epsilon
-dkGreekAlphabet["z"] := "{u+03b6}"  ; (ζ) small zeta
-dkGreekAlphabet["Z"] := "{u+0396}"  ; (Ζ) capital zeta
-dkGreekAlphabet["h"] := "{u+03b7}"  ; (η) small eta
-dkGreekAlphabet["H"] := "{u+0397}"  ; (Η) capital eta
-dkGreekAlphabet["j"] := "{u+03b8}"  ; (θ) small theta
-dkGreekAlphabet["J"] := "{u+0398}"  ; (Θ) capital theta
-dkGreekAlphabet["i"] := "{u+03b9}"  ; (ι) small iota
-dkGreekAlphabet["I"] := "{u+0399}"  ; (Ι) capital iota
-dkGreekAlphabet["k"] := "{u+03ba}"  ; (κ) small kappa
-dkGreekAlphabet["K"] := "{u+039a}"  ; (Κ) capital kappa
-dkGreekAlphabet["l"] := "{u+03bb}"  ; (λ) small lambda
-dkGreekAlphabet["L"] := "{u+039b}"  ; (Λ) capital lambda
-dkGreekAlphabet["m"] := "{u+03bc}"  ; (μ) small mu
-dkGreekAlphabet["M"] := "{u+039c}"  ; (Μ) capital mu
-dkGreekAlphabet["n"] := "{u+03bd}"  ; (ν) small nu
-dkGreekAlphabet["N"] := "{u+039d}"  ; (Ν) capital nu
-dkGreekAlphabet["x"] := "{u+03be}"  ; (ξ) small xi
-dkGreekAlphabet["X"] := "{u+039e}"  ; (Ξ) capital xi
-dkGreekAlphabet["o"] := "{u+03bf}"  ; (ο) small omicron
-dkGreekAlphabet["O"] := "{u+039f}"  ; (Ο) capital omicron
-dkGreekAlphabet["p"] := "{u+03c0}"  ; (π) small pi
-dkGreekAlphabet["P"] := "{u+03a0}"  ; (Π) capital pi
-dkGreekAlphabet["r"] := "{u+03c1}"  ; (ρ) small rho
-dkGreekAlphabet["R"] := "{u+03a1}"  ; (Ρ) capital rho
-dkGreekAlphabet["s"] := "{u+03c3}"  ; (σ) small sigma
-dkGreekAlphabet["S"] := "{u+03a3}"  ; (Σ) capital sigma
-dkGreekAlphabet[","] := "{u+03c2}"  ; (ς) small final sigma
-dkGreekAlphabet[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
-dkGreekAlphabet["t"] := "{u+03c4}"  ; (τ) small tau
-dkGreekAlphabet["T"] := "{u+03a4}"  ; (Τ) capital tau
-dkGreekAlphabet["u"] := "{u+03c5}"  ; (υ) small upsilon
-dkGreekAlphabet["U"] := "{u+03a5}"  ; (Υ) capital upsilon
-dkGreekAlphabet["y"] := "{u+03c5}"  ; (υ) small upsilon
-dkGreekAlphabet["Y"] := "{u+03a5}"  ; (Υ) capital upsilon
-dkGreekAlphabet["f"] := "{u+03c6}"  ; (φ) small phi
-dkGreekAlphabet["F"] := "{u+03a6}"  ; (Φ) capital phi
-dkGreekAlphabet["c"] := "{u+03c7}"  ; (χ) small chi
-dkGreekAlphabet["C"] := "{u+03a7}"  ; (Χ) capital chi
-dkGreekAlphabet["w"] := "{u+03c8}"  ; (ψ) small psi
-dkGreekAlphabet["W"] := "{u+03a8}"  ; (Ψ) capital psi
-dkGreekAlphabet["q"] := "{u+03c9}"  ; (ω) small omega
-dkGreekAlphabet["Q"] := "{u+03a9}"  ; (Ω) capital omega
-dkGreekAlphabet["1"] := "{u+00b9}"  ; (¹) superscript 1
-dkGreekAlphabet["2"] := "{u+00b2}"  ; (²) superscript 2
-dkGreekAlphabet["3"] := "{u+00b3}"  ; (³) superscript 3
-dkGreekAlphabet["4"] := "{u+2074}"  ; (⁴) superscript 4
-dkGreekAlphabet["5"] := "{u+2075}"  ; (⁵) superscript 5
-dkGreekAlphabet["6"] := "{u+2076}"  ; (⁶) superscript 6
-dkGreekAlphabet["7"] := "{u+2077}"  ; (⁷) superscript 7
-dkGreekAlphabet["8"] := "{u+2078}"  ; (⁸) superscript 8
-dkGreekAlphabet["9"] := "{u+2079}"  ; (⁹) superscript 9
-dkGreekAlphabet["0"] := "{u+2070}"  ; (⁰) superscript 0
-dkGreekAlphabet["-"] := "{u+207b}"  ; (⁻) superscript -
-dkGreekAlphabet["="] := "{u+207c}"  ; (⁼) superscript =
-dkGreekAlphabet["+"] := "{u+207a}"  ; (⁺) superscript +
-dkGreekAlphabet["["] := "{u+207d}"  ; (⁽) superscript (
-dkGreekAlphabet["]"] := "{u+207e}"  ; (⁾) superscript )
-dkGreekAlphabet["!"] := "{u+2081}"  ; (₁) subscript 1
-dkGreekAlphabet["@"] := "{u+2082}"  ; (₂) subscript 2
-dkGreekAlphabet["#"] := "{u+2083}"  ; (₃) subscript 3
-dkGreekAlphabet["$"] := "{u+2084}"  ; (₄) subscript 4
-dkGreekAlphabet["%"] := "{u+2085}"  ; (₅) subscript 5
-dkGreekAlphabet["^"] := "{u+2086}"  ; (₆) subscript 6
-dkGreekAlphabet["&"] := "{u+2087}"  ; (₇) subscript 7
-dkGreekAlphabet["*"] := "{u+2088}"  ; (₈) subscript 8
-dkGreekAlphabet["("] := "{u+2089}"  ; (₉) subscript 9
-dkGreekAlphabet[")"] := "{u+2080}"  ; (₀) subscript 0
-dkGreekAlphabet[";"] := "{u+208b}"  ; (₋) subscript -
-dkGreekAlphabet["'"] := "{u+208c}"  ; (₌) subscript =
-dkGreekAlphabet[chr(34)] := "{u+208a}"  ; (₊) subscript +
-dkGreekAlphabet["{"] := "{u+208d}"  ; (₍) subscript (
-dkGreekAlphabet["}"] := "{u+208e}"  ; (₎) subscript )
-dkGreekAlphabet[" "] := "{u+03bc}"  ; (μ) small mu
+global dkGreek := Map()
+dkGreek["a"] := "{u+03b1}"  ; (α) small alpha
+dkGreek["A"] := "{u+0391}"  ; (Α) capital alpha
+dkGreek["b"] := "{u+03b2}"  ; (β) small beta
+dkGreek["B"] := "{u+0392}"  ; (Β) capital beta
+dkGreek["v"] := "{u+03b2}"  ; (β) small beta
+dkGreek["V"] := "{u+0392}"  ; (Β) capital beta
+dkGreek["g"] := "{u+03b3}"  ; (γ) small gamma
+dkGreek["G"] := "{u+0393}"  ; (Γ) capital gamma
+dkGreek["d"] := "{u+03b4}"  ; (δ) small delta
+dkGreek["D"] := "{u+0394}"  ; (Δ) capital delta
+dkGreek["e"] := "{u+03b5}"  ; (ε) small epsilon
+dkGreek["E"] := "{u+0395}"  ; (Ε) capital epsilon
+dkGreek["z"] := "{u+03b6}"  ; (ζ) small zeta
+dkGreek["Z"] := "{u+0396}"  ; (Ζ) capital zeta
+dkGreek["h"] := "{u+03b7}"  ; (η) small eta
+dkGreek["H"] := "{u+0397}"  ; (Η) capital eta
+dkGreek["j"] := "{u+03b8}"  ; (θ) small theta
+dkGreek["J"] := "{u+0398}"  ; (Θ) capital theta
+dkGreek["i"] := "{u+03b9}"  ; (ι) small iota
+dkGreek["I"] := "{u+0399}"  ; (Ι) capital iota
+dkGreek["k"] := "{u+03ba}"  ; (κ) small kappa
+dkGreek["K"] := "{u+039a}"  ; (Κ) capital kappa
+dkGreek["l"] := "{u+03bb}"  ; (λ) small lambda
+dkGreek["L"] := "{u+039b}"  ; (Λ) capital lambda
+dkGreek["m"] := "{u+03bc}"  ; (μ) small mu
+dkGreek["M"] := "{u+039c}"  ; (Μ) capital mu
+dkGreek["n"] := "{u+03bd}"  ; (ν) small nu
+dkGreek["N"] := "{u+039d}"  ; (Ν) capital nu
+dkGreek["x"] := "{u+03be}"  ; (ξ) small xi
+dkGreek["X"] := "{u+039e}"  ; (Ξ) capital xi
+dkGreek["o"] := "{u+03bf}"  ; (ο) small omicron
+dkGreek["O"] := "{u+039f}"  ; (Ο) capital omicron
+dkGreek["p"] := "{u+03c0}"  ; (π) small pi
+dkGreek["P"] := "{u+03a0}"  ; (Π) capital pi
+dkGreek["r"] := "{u+03c1}"  ; (ρ) small rho
+dkGreek["R"] := "{u+03a1}"  ; (Ρ) capital rho
+dkGreek["s"] := "{u+03c3}"  ; (σ) small sigma
+dkGreek["S"] := "{u+03a3}"  ; (Σ) capital sigma
+dkGreek[","] := "{u+03c2}"  ; (ς) small final sigma
+dkGreek[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
+dkGreek["t"] := "{u+03c4}"  ; (τ) small tau
+dkGreek["T"] := "{u+03a4}"  ; (Τ) capital tau
+dkGreek["u"] := "{u+03c5}"  ; (υ) small upsilon
+dkGreek["U"] := "{u+03a5}"  ; (Υ) capital upsilon
+dkGreek["y"] := "{u+03c5}"  ; (υ) small upsilon
+dkGreek["Y"] := "{u+03a5}"  ; (Υ) capital upsilon
+dkGreek["f"] := "{u+03c6}"  ; (φ) small phi
+dkGreek["F"] := "{u+03a6}"  ; (Φ) capital phi
+dkGreek["c"] := "{u+03c7}"  ; (χ) small chi
+dkGreek["C"] := "{u+03a7}"  ; (Χ) capital chi
+dkGreek["w"] := "{u+03c8}"  ; (ψ) small psi
+dkGreek["W"] := "{u+03a8}"  ; (Ψ) capital psi
+dkGreek["q"] := "{u+03c9}"  ; (ω) small omega
+dkGreek["Q"] := "{u+03a9}"  ; (Ω) capital omega
+dkGreek["1"] := "{u+00b9}"  ; (¹) superscript 1
+dkGreek["2"] := "{u+00b2}"  ; (²) superscript 2
+dkGreek["3"] := "{u+00b3}"  ; (³) superscript 3
+dkGreek["4"] := "{u+2074}"  ; (⁴) superscript 4
+dkGreek["5"] := "{u+2075}"  ; (⁵) superscript 5
+dkGreek["6"] := "{u+2076}"  ; (⁶) superscript 6
+dkGreek["7"] := "{u+2077}"  ; (⁷) superscript 7
+dkGreek["8"] := "{u+2078}"  ; (⁸) superscript 8
+dkGreek["9"] := "{u+2079}"  ; (⁹) superscript 9
+dkGreek["0"] := "{u+2070}"  ; (⁰) superscript 0
+dkGreek["-"] := "{u+207b}"  ; (⁻) superscript -
+dkGreek["="] := "{u+207c}"  ; (⁼) superscript =
+dkGreek["+"] := "{u+207a}"  ; (⁺) superscript +
+dkGreek["["] := "{u+207d}"  ; (⁽) superscript (
+dkGreek["]"] := "{u+207e}"  ; (⁾) superscript )
+dkGreek["!"] := "{u+2081}"  ; (₁) subscript 1
+dkGreek["@"] := "{u+2082}"  ; (₂) subscript 2
+dkGreek["#"] := "{u+2083}"  ; (₃) subscript 3
+dkGreek["$"] := "{u+2084}"  ; (₄) subscript 4
+dkGreek["%"] := "{u+2085}"  ; (₅) subscript 5
+dkGreek["^"] := "{u+2086}"  ; (₆) subscript 6
+dkGreek["&"] := "{u+2087}"  ; (₇) subscript 7
+dkGreek["*"] := "{u+2088}"  ; (₈) subscript 8
+dkGreek["("] := "{u+2089}"  ; (₉) subscript 9
+dkGreek[")"] := "{u+2080}"  ; (₀) subscript 0
+dkGreek[";"] := "{u+208b}"  ; (₋) subscript -
+dkGreek["'"] := "{u+208c}"  ; (₌) subscript =
+dkGreek[chr(34)] := "{u+208a}"  ; (₊) subscript +
+dkGreek["{"] := "{u+208d}"  ; (₍) subscript (
+dkGreek["}"] := "{u+208e}"  ; (₎) subscript )
+dkGreek[" "] := "{u+03bc}"  ; (μ) small mu
 
 
 ; Dead Key :  Math Symbols
@@ -562,37 +560,37 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  6
 >!sc007::
 <^>!sc007:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkCircumflex.Has(ih.Input)
-    Send dkCircumflex[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkCircumflex.Has(dead.Input)
+    Send dkCircumflex[dead.Input]
 }
 >!+sc007::
 <^>!+sc007:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkCaron.Has(ih.Input)
-    Send dkCaron[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkCaron.Has(dead.Input)
+    Send dkCaron[dead.Input]
 }
 
 ; Key :  7
 >!sc008::
 <^>!sc008:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkRingAbove.Has(ih.Input)
-    Send dkRingAbove[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkRingAbove.Has(dead.Input)
+    Send dkRingAbove[dead.Input]
 }
 >!+sc008::
 <^>!+sc008:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkMacron.Has(ih.Input)
-    Send dkMacron[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkMacron.Has(dead.Input)
+    Send dkMacron[dead.Input]
 }
 
 ; Key :  8
@@ -950,47 +948,47 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
 <^>!sc028:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkAcuteAccent.Has(ih.Input)
-    Send dkAcuteAccent[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkAcute.Has(dead.Input)
+    Send dkAcute[dead.Input]
 }
 >!+sc028::
 <^>!+sc028:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkDiaeresis.Has(ih.Input)
-    Send dkDiaeresis[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkDiaeresis.Has(dead.Input)
+    Send dkDiaeresis[dead.Input]
 }
 
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
 <^>!sc029:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkGraveAccent.Has(ih.Input)
-    Send dkGraveAccent[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkGrave.Has(dead.Input)
+    Send dkGrave[dead.Input]
 }
 >!+sc029::
 <^>!+sc029:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkTilde.Has(ih.Input)
-    Send dkTilde[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkTilde.Has(dead.Input)
+    Send dkTilde[dead.Input]
 }
 
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
 <^>!sc02B:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkSymbols.Has(ih.Input)
-    Send dkSymbols[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkSymbols.Has(dead.Input)
+    Send dkSymbols[dead.Input]
 }
 >!+sc02B::
 <^>!+sc02B::Send "{u+00a6}"  ; (¦) broken bar
@@ -1094,19 +1092,19 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  M
 >!sc032::
 <^>!sc032:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkGreekAlphabet.Has(ih.Input)
-    Send dkGreekAlphabet[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkGreek.Has(dead.Input)
+    Send dkGreek[dead.Input]
 }
 >!+sc032::
 <^>!+sc032:: {
-  ih := InputHook("L1", dkEndKeys)
-  ih.Start()
-  ih.Wait()
-  if dkMathSymbols.Has(ih.Input)
-    Send dkMathSymbols[ih.Input]
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if dkMathSymbols.Has(dead.Input)
+    Send dkMathSymbols[dead.Input]
 }
 
 ; Key :  , / < (comma / less-than sign)
