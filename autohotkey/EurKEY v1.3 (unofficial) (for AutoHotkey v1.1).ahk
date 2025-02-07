@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v1.1).ahk - 2025-01-29
+; EurKEY v1.3 (unofficial) (for AutoHotkey v1.1).ahk - 2025-02-06
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -19,10 +19,12 @@ ListLines Off   ; omits recently executed lines from history (for privacy and se
 
 SendMode Event  ; allows chaining of customized key combinations
 
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+
 
 ; Dead Key :  Circumflex Accent
 
-dkCircumflex := ComObjCreate("Scripting.Dictionary")
+global dkCircumflex := ComObjCreate("Scripting.Dictionary")
 dkCircumflex.item["a"] := "{u+00e2}"  ; (â) a with circumflex
 dkCircumflex.item["A"] := "{u+00c2}"  ; (Â) A with circumflex
 dkCircumflex.item["c"] := "{u+0109}"  ; (ĉ) c with circumflex
@@ -54,7 +56,7 @@ dkCircumflex.item[" "] := "{u+005e}"  ; (^) circumflex accent
 
 ; Dead Key :  Caron
 
-dkCaron := ComObjCreate("Scripting.Dictionary")
+global dkCaron := ComObjCreate("Scripting.Dictionary")
 dkCaron.item["a"] := "{u+01ce}"  ; (ǎ) a with caron
 dkCaron.item["A"] := "{u+01cd}"  ; (Ǎ) A with caron
 dkCaron.item["c"] := "{u+010d}"  ; (č) c with caron
@@ -99,7 +101,7 @@ dkCaron.item[" "] := "{u+02c7}"  ; (ˇ) caron
 
 ; Dead Key :  Ring/Dot Above
 
-dkRingAbove := ComObjCreate("Scripting.Dictionary")
+global dkRingAbove := ComObjCreate("Scripting.Dictionary")
 dkRingAbove.item["a"] := "{u+0227}"  ; (ȧ) a with dot above
 dkRingAbove.item["A"] := "{u+0226}"  ; (Ȧ) A with dot above
 dkRingAbove.item["b"] := "{u+1e03}"  ; (ḃ) b with dot above
@@ -152,7 +154,7 @@ dkRingAbove.item[" "] := "{u+02da}"  ; (˚) ring above
 
 ; Dead Key :  Macron (and Stroke)
 
-dkMacron := ComObjCreate("Scripting.Dictionary")
+global dkMacron := ComObjCreate("Scripting.Dictionary")
 dkMacron.item["a"] := "{u+0101}"  ; (ā) a with macron
 dkMacron.item["A"] := "{u+0100}"  ; (Ā) A with macron
 dkMacron.item["b"] := "{u+0180}"  ; (ƀ) b with stroke
@@ -187,7 +189,7 @@ dkMacron.item[" "] := "{u+00af}"  ; (¯) macron
 
 ; Dead Key :  Acute Accent
 
-dkAcute := ComObjCreate("Scripting.Dictionary")
+global dkAcute := ComObjCreate("Scripting.Dictionary")
 dkAcute.item["a"] := "{u+00e1}"  ; (á) a with acute
 dkAcute.item["A"] := "{u+00c1}"  ; (Á) A with acute
 dkAcute.item["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -239,7 +241,7 @@ dkAcute.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 ; Dead Key :  Diaeresis
 
-dkDiaeresis := ComObjCreate("Scripting.Dictionary")
+global dkDiaeresis := ComObjCreate("Scripting.Dictionary")
 dkDiaeresis.item["a"] := "{u+00e4}"  ; (ä) a with diaeresis
 dkDiaeresis.item["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
 dkDiaeresis.item["e"] := "{u+00eb}"  ; (ë) e with diaeresis
@@ -264,7 +266,7 @@ dkDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 ; Dead Key :  Grave Accent
 
-dkGrave := ComObjCreate("Scripting.Dictionary")
+global dkGrave := ComObjCreate("Scripting.Dictionary")
 dkGrave.item["a"] := "{u+00e0}"  ; (à) a with grave
 dkGrave.item["A"] := "{u+00c0}"  ; (À) A with grave
 dkGrave.item["e"] := "{u+00e8}"  ; (è) e with grave
@@ -296,7 +298,7 @@ dkGrave.item[" "] := "{u+0060}"  ; (`) grave accent
 
 ; Dead Key :  Tilde
 
-dkTilde := ComObjCreate("Scripting.Dictionary")
+global dkTilde := ComObjCreate("Scripting.Dictionary")
 dkTilde.item["a"] := "{u+00e3}"  ; (ã) a with tilde
 dkTilde.item["A"] := "{u+00c3}"  ; (Ã) A with tilde
 dkTilde.item["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
@@ -320,7 +322,7 @@ dkTilde.item[" "] := "{u+007e}"  ; (~) tilde
 
 ; Dead Key :  Symbols
 
-dkSymbols := ComObjCreate("Scripting.Dictionary")
+global dkSymbols := ComObjCreate("Scripting.Dictionary")
 dkSymbols.item["c"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols.item["C"] := "{u+00a9}"  ; (©) copyright sign
 dkSymbols.item["p"] := "{u+2117}"  ; (℗) sound recording copyright
@@ -373,7 +375,7 @@ dkSymbols.item[" "] := "{u+00ac}"  ; (¬) not sign
 
 ; Dead Key :  Greek Alphabet
 
-dkGreek := ComObjCreate("Scripting.Dictionary")
+global dkGreek := ComObjCreate("Scripting.Dictionary")
 dkGreek.item["a"] := "{u+03b1}"  ; (α) small alpha
 dkGreek.item["A"] := "{u+0391}"  ; (Α) capital alpha
 dkGreek.item["b"] := "{u+03b2}"  ; (β) small beta
@@ -463,7 +465,7 @@ dkGreek.item[" "] := "{u+03bc}"  ; (μ) small mu
 
 ; Dead Key :  Math Symbols
 
-dkMathSymbols := ComObjCreate("Scripting.Dictionary")
+global dkMathSymbols := ComObjCreate("Scripting.Dictionary")
 dkMathSymbols.item["!"] := "{u+2260}"  ; (≠) not equal to
 dkMathSymbols.item["~"] := "{u+2248}"  ; (≈) almost equal to
 dkMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
@@ -561,14 +563,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  6
 >!sc007::
 <^>!sc007::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkCircumflex.item[dead.Input]
   return
 >!+sc007::
 <^>!+sc007::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkCaron.item[dead.Input]
@@ -577,14 +579,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  7
 >!sc008::
 <^>!sc008::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkRingAbove.item[dead.Input]
   return
 >!+sc008::
 <^>!+sc008::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkMacron.item[dead.Input]
@@ -945,14 +947,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
 <^>!sc028::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkAcute.item[dead.Input]
   return
 >!+sc028::
 <^>!+sc028::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkDiaeresis.item[dead.Input]
@@ -961,14 +963,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
 <^>!sc029::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkGrave.item[dead.Input]
   return
 >!+sc029::
 <^>!+sc029::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkTilde.item[dead.Input]
@@ -977,7 +979,7 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
 <^>!sc02B::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkSymbols.item[dead.Input]
@@ -1084,14 +1086,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  M
 >!sc032::
 <^>!sc032::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkGreek.item[dead.Input]
   return
 >!+sc032::
 <^>!+sc032::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkMathSymbols.item[dead.Input]

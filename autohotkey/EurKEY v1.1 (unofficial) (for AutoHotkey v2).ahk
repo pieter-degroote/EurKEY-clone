@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2025-01-29
+; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2025-02-06
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -17,6 +17,8 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
+
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
 
 
 ; Dead Key :  Circumflex Accent
@@ -559,7 +561,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  6
 >!sc007::
 <^>!sc007:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkCircumflex.Has(dead.Input)
@@ -567,7 +569,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 }
 >!+sc007::
 <^>!+sc007:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkCaron.Has(dead.Input)
@@ -577,7 +579,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  7
 >!sc008::
 <^>!sc008:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkRingAbove.Has(dead.Input)
@@ -585,7 +587,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 }
 >!+sc008::
 <^>!+sc008:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkMacron.Has(dead.Input)
@@ -613,7 +615,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  - / _ (hyphen-minus / underscore)
 >!sc00C::
 <^>!sc00C:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkSymbols.Has(dead.Input)
@@ -937,7 +939,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ; / : (semicolon / colon)
 >!sc027::
 <^>!sc027:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkDiaeresis.Has(dead.Input)
@@ -949,7 +951,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
 <^>!sc028:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkAcute.Has(dead.Input)
@@ -961,7 +963,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
 <^>!sc029:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkGrave.Has(dead.Input)
@@ -969,7 +971,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 }
 >!+sc029::
 <^>!+sc029:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkTilde.Has(dead.Input)
@@ -1081,7 +1083,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  M
 >!sc032::
 <^>!sc032:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkGreek.Has(dead.Input)
@@ -1089,7 +1091,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 }
 >!+sc032::
 <^>!+sc032:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkMathSymbols.Has(dead.Input)
