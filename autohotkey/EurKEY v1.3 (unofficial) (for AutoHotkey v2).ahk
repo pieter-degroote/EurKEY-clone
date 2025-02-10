@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2025-02-06
+; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2025-02-10
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -562,37 +562,33 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  6
 >!sc007::
 <^>!sc007:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkCircumflex.Has(dead.Input)
-    Send dkCircumflex[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkCircumflex.Has(ih.Input)
+    Send dkCircumflex[ih.Input]
 }
 >!+sc007::
 <^>!+sc007:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkCaron.Has(dead.Input)
-    Send dkCaron[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkCaron.Has(ih.Input)
+    Send dkCaron[ih.Input]
 }
 
 ; Key :  7
 >!sc008::
 <^>!sc008:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkRingAbove.Has(dead.Input)
-    Send dkRingAbove[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkRingAbove.Has(ih.Input)
+    Send dkRingAbove[ih.Input]
 }
 >!+sc008::
 <^>!+sc008:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkMacron.Has(dead.Input)
-    Send dkMacron[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkMacron.Has(ih.Input)
+    Send dkMacron[ih.Input]
 }
 
 ; Key :  8
@@ -950,47 +946,42 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
 <^>!sc028:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkAcute.Has(dead.Input)
-    Send dkAcute[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkAcute.Has(ih.Input)
+    Send dkAcute[ih.Input]
 }
 >!+sc028::
 <^>!+sc028:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkDiaeresis.Has(dead.Input)
-    Send dkDiaeresis[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkDiaeresis.Has(ih.Input)
+    Send dkDiaeresis[ih.Input]
 }
 
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
 <^>!sc029:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkGrave.Has(dead.Input)
-    Send dkGrave[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkGrave.Has(ih.Input)
+    Send dkGrave[ih.Input]
 }
 >!+sc029::
 <^>!+sc029:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkTilde.Has(dead.Input)
-    Send dkTilde[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkTilde.Has(ih.Input)
+    Send dkTilde[ih.Input]
 }
 
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
 <^>!sc02B:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkSymbols.Has(dead.Input)
-    Send dkSymbols[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkSymbols.Has(ih.Input)
+    Send dkSymbols[ih.Input]
 }
 >!+sc02B::
 <^>!+sc02B::Send "{u+00a6}"  ; (¦) broken bar
@@ -1094,19 +1085,17 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 ; Key :  M
 >!sc032::
 <^>!sc032:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkGreek.Has(dead.Input)
-    Send dkGreek[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkGreek.Has(ih.Input)
+    Send dkGreek[ih.Input]
 }
 >!+sc032::
 <^>!+sc032:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkMathSymbols.Has(dead.Input)
-    Send dkMathSymbols[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkMathSymbols.Has(ih.Input)
+    Send dkMathSymbols[ih.Input]
 }
 
 ; Key :  , / < (comma / less-than sign)

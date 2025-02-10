@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2025-02-06
+; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2025-02-10
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -562,33 +562,29 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  6
 >!sc007::
 <^>!sc007::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkCircumflex.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkCircumflex.item[ih.Input]
   return
 >!+sc007::
 <^>!+sc007::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkCaron.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkCaron.item[ih.Input]
   return
 
 ; Key :  7
 >!sc008::
 <^>!sc008::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkRingAbove.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkRingAbove.item[ih.Input]
   return
 >!+sc008::
 <^>!+sc008::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkMacron.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkMacron.item[ih.Input]
   return
 
 ; Key :  8
@@ -612,10 +608,9 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  - / _ (hyphen-minus / underscore)
 >!sc00C::
 <^>!sc00C::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkSymbols.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkSymbols.item[ih.Input]
   return
 >!+sc00C::
 <^>!+sc00C::Send {u+2116}  ; (№) numero sign
@@ -935,10 +930,9 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ; / : (semicolon / colon)
 >!sc027::
 <^>!sc027::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkDiaeresis.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkDiaeresis.item[ih.Input]
   return
 >!+sc027::
 <^>!+sc027::Send {u+00b7}  ; (·) middle dot
@@ -946,10 +940,9 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
 <^>!sc028::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkAcute.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkAcute.item[ih.Input]
   return
 >!+sc028::
 <^>!+sc028::Send {u+2020}  ; (†) dagger
@@ -957,17 +950,15 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
 <^>!sc029::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkGrave.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkGrave.item[ih.Input]
   return
 >!+sc029::
 <^>!+sc029::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkTilde.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkTilde.item[ih.Input]
   return
 
 ; Key :  \ / | (backslash / vertical line)
@@ -1075,17 +1066,15 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 ; Key :  M
 >!sc032::
 <^>!sc032::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkGreek.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkGreek.item[ih.Input]
   return
 >!+sc032::
 <^>!+sc032::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkMathSymbols.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkMathSymbols.item[ih.Input]
   return
 
 ; Key :  , / < (comma / less-than sign)
