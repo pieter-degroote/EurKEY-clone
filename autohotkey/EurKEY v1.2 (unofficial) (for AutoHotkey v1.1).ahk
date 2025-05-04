@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2025-02-10
+; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2025-05-04
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -118,8 +118,8 @@ dkRingAbove.item["g"] := "{u+0121}"  ; (ġ) g with dot above
 dkRingAbove.item["G"] := "{u+0120}"  ; (Ġ) G with dot above
 dkRingAbove.item["h"] := "{u+1e23}"  ; (ḣ) h with dot above
 dkRingAbove.item["H"] := "{u+1e22}"  ; (Ḣ) H with dot above
-dkRingAbove.item["i"] := "{u+0131}"  ; (ı) dotless i (Turkish, Azerbaijani)
-dkRingAbove.item["I"] := "{u+0130}"  ; (İ) I with dot above (Turkish, Azerbaijani)
+dkRingAbove.item["i"] := "{u+0131}"  ; (ı) dotless i
+dkRingAbove.item["I"] := "{u+0130}"  ; (İ) I with dot above
 dkRingAbove.item["j"] := "{u+0237}"  ; (ȷ) dotless j
 dkRingAbove.item["l"] := "{u+0140}"  ; (ŀ) l with middle dot
 dkRingAbove.item["L"] := "{u+013f}"  ; (Ŀ) L with middle dot
@@ -163,10 +163,10 @@ dkMacron.item["d"] := "{u+0111}"  ; (đ) d with stroke
 dkMacron.item["D"] := "{u+0110}"  ; (Đ) D with stroke
 dkMacron.item["e"] := "{u+0113}"  ; (ē) e with macron
 dkMacron.item["E"] := "{u+0112}"  ; (Ē) E with macron
-dkMacron.item["g"] := "{u+01e5}"  ; (ǥ) g with stroke (Skolt Sami)
-dkMacron.item["G"] := "{u+01e4}"  ; (Ǥ) G with stroke (Skolt Sami)
-dkMacron.item["h"] := "{u+0127}"  ; (ħ) h with stroke (Maltese)
-dkMacron.item["H"] := "{u+0126}"  ; (Ħ) H with stroke (Maltese)
+dkMacron.item["g"] := "{u+01e5}"  ; (ǥ) g with stroke
+dkMacron.item["G"] := "{u+01e4}"  ; (Ǥ) G with stroke
+dkMacron.item["h"] := "{u+0127}"  ; (ħ) h with stroke
+dkMacron.item["H"] := "{u+0126}"  ; (Ħ) H with stroke
 dkMacron.item["i"] := "{u+012b}"  ; (ī) i with macron
 dkMacron.item["I"] := "{u+012a}"  ; (Ī) I with macron
 dkMacron.item["l"] := "{u+0142}"  ; (ł) l with stroke
@@ -184,6 +184,8 @@ dkMacron.item["2"] := "{u+2013}"  ; (–) en dash
 dkMacron.item["3"] := "{u+2014}"  ; (—) em dash
 dkMacron.item[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
 dkMacron.item[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
+dkMacron.item[chr(0x00e9)] := "{u+1e21}"  ; (é -> ḡ) g with macron
+dkMacron.item[chr(0x00c9)] := "{u+1e20}"  ; (É -> Ḡ) G with macron
 dkMacron.item[" "] := "{u+00af}"  ; (¯) macron
 
 
@@ -533,13 +535,13 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 ; Key :  2
 >!sc003::
-<^>!sc003::Send {u+00aa}   ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+<^>!sc003::Send {u+00aa}   ; (ª) feminine ordinal indicator
 >!+sc003::
 <^>!+sc003::Send {u+00b2}  ; (²) superscript 2
 
 ; Key :  3
 >!sc004::
-<^>!sc004::Send {u+00ba}   ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+<^>!sc004::Send {u+00ba}   ; (º) masculine ordinal indicator
 >!+sc004::
 <^>!+sc004::Send {u+00b3}  ; (³) superscript 3
 
