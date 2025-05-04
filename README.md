@@ -24,6 +24,6 @@ See the folder **`images`**.
 
 **EurKEY - Official website&nbsp;: &nbsp;https://eurkey.steffen.bruentjen.eu/**
 
-**UltimateKEYS - Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
+**My website (UltimateKEYS)&nbsp;: &nbsp;https://pieter-degroote.github.io/**
 
 **Similar Projects&nbsp;: &nbsp;https://pieter-degroote.github.io/list-keyboard-layouts.html**
