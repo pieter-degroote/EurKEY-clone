@@ -8,10 +8,10 @@ To work properly, the Windows main/base keyboard layout has to be set to&nbsp;:
 
 **=&gt; AltGr assigned to EurKEY**
 
-- [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
-- [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
+- [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
+- [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
 - EurKEY Keyboard Layout (MSKLC, any version)
-- [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
+- [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 - Hausa (Latin, Nigeria) (based on US QWERTY, see settings)
 - Romanian (Programmers) (based on US QWERTY, see settings)
 - English (India) (based on US QWERTY, see settings)
