@@ -18,4 +18,6 @@
 
 =&gt; CP key&nbsp;: &nbsp;Compose Key (Multi_key)
 
-The files with "Source URL - EurKEY \[...\].txt" contain the respective links to keyboard-layout-editor.com, generating their corresponding images.
+## Image Source Links (.txt)
+
+The '.txt' file contains the corresponding links to 'keyboard-layout-editor.com', generating the given images.
