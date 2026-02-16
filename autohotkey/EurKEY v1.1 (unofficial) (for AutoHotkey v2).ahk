@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2025-05-04
+; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -9,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout :  US QWERTY
+; Keyboard layout :  US QWERTY / KBDUSX
 
 
 
@@ -18,7 +18,7 @@ ListLines False   ; omits recently executed lines from history (for privacy and 
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
-global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+global gEndKeys := "{bs}{del}{esc}"  ; ends dead key input on Backspace, Delete or Escape
 
 
 ; Dead Key :  Circumflex Accent
@@ -526,6 +526,19 @@ dkMathSymbols["7"] := "{u+2221}"  ; (∡) measured angle
 dkMathSymbols["l"] := "{u+2225}"  ; (∥) parallel to
 dkMathSymbols["L"] := "{u+2226}"  ; (∦) not parallel to
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
+
+
+; Configuration :  US QWERTY re-assignments (KBDUSX)
+
++sc007::Send "{u+005e}"     ; (^) circumflex accent
+
+sc028::Send "{u+0027}"      ; (') apostrophe
++sc028::Send "{u+0022}"     ; (") quotation mark
+
+sc029::Send "{u+0060}"      ; (`) grave accent
++sc029::Send "{u+007e}"     ; (~) tilde
+
+NumpadDot::Send "{u+002e}"  ; (.) period
 
 
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
