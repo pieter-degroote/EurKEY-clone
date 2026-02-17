@@ -13,7 +13,7 @@ To work properly, the Windows main/base keyboard layout has to be set to US QWER
 - EurKEY Keyboard Layout (MSKLC, any version)
 - [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 - US-International (KBDUSX)
-- Hausa (Latin, Nigeria)
+- Hausa (Latin)
 - Romanian (Programmers)
 - English (India)
 - Czech Programmers
