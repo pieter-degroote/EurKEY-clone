@@ -22,10 +22,17 @@ See the folder **`msklc`**.
 The keyboard layout images for EurKEY v1.1 to v1.3, created using keyboard-layout-editor.com.  
 See the folder **`images`**.
 
+## Important Notice - Security
+
+**=\> Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=\>&emsp;ACCOUNT LOCKOUT**
+
+**=\> Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
+
 ## Documentation and Similar Projects
 
-**EurKEY - Official website&nbsp;: &nbsp;https://eurkey.steffen.bruentjen.eu/**
+**EurKEY - Official website&nbsp;: &nbsp;<https://eurkey.steffen.bruentjen.eu/>**
 
-**My website (UltimateKEYS)&nbsp;: &nbsp;https://pieter-degroote.github.io/**
+**My website (UltimateKEYS)&nbsp;: &nbsp;<https://pieter-degroote.github.io/>**
 
-**Similar Projects&nbsp;: &nbsp;https://pieter-degroote.github.io/list-keyboard-layouts.html**
+**Similar Projects&nbsp;: &nbsp;<https://pieter-degroote.github.io/list-keyboard-layouts.html>**
