@@ -6,7 +6,7 @@ This folder contains the unofficial AHK scripts for EurKEY v1.1 to v1.3.
 
 To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-**=&gt; AltGr assigned to EurKEY**
+**=\> AltGr assigned to EurKEY**
 
 - [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
 - [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
@@ -25,15 +25,15 @@ To work properly, the Windows main/base keyboard layout has to be set to US QWER
 - Latvian QWERTY (on Windows 11)
 - or any other variant that is fully based on US QWERTY
 
-**=&gt; Right Alt assigned to EurKEY (secondary choice)**
+**=\> Right Alt assigned to EurKEY (secondary choice)**
 
 - United States (US)
 - Maori (NZ Aotearoa)
 
-**_Note about the standard base US layout&nbsp;:_**
+***Note about the standard base US layout&nbsp;:***
 
 When two or more languages/keyboards are installed on the system, the default 'Alt + Shift' sequence will interfere with the AHK scripts.  
 To avoid this, you can disable the interfering key sequences at&nbsp;:  
-Win 11&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Typing -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
-Win 10&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
+Win 11&nbsp;: &nbsp;*Settings -\> Time &amp; Language -\> Typing -\> Advanced keyboard settings -\> Input language hot keys*  
+Win 10&nbsp;: &nbsp;*Settings -\> Time &amp; Language -\> Language -\> Spelling, typing &amp; keyboard settings (on the right) -\> Advanced keyboard settings -\> Input language hot keys*  
 Please note that on the standard US QWERTY, the sequence 'Left Alt + Shift' also gets mistakenly triggered by 'Right Alt + Shift', resulting in an unexpected keyboard layout change.
