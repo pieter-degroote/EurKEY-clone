@@ -16,7 +16,7 @@
 
 ![EurKEY (US) - Linux XKB - Keyboard Layout Image](EurKEY%20(US)%20-%20Linux%20XKB%20-%20Keyboard%20Layout%20Image.png)
 
-=&gt; CP key&nbsp;: &nbsp;Compose Key (Multi_key)
+=\> CP key&nbsp;: &nbsp;Compose Key (Multi_key)
 
 ## Image Source Links (.txt)
 
